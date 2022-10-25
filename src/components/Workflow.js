@@ -5,9 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Workflow.css';
 import Form from 'react-bootstrap/Form';
-import {BsSearch} from 'react-icons/bs';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import Button from 'react-bootstrap/Button';
 
 export default function Workflow() {
   return (
@@ -194,14 +192,81 @@ export default function Workflow() {
                             <tr>
                                 <td>Workflow Approval</td>
                                 <td> </td>
-                                <td>Whom to Send</td>
-                                <td>Action Type</td>
-                                <td>Whom to Send Action Type</td>
-                                <td>Whom to Send Action Type</td>
+                                <td>
+                                    <tr>
+                                        <thead>
+                                            <th>Whom to Send &nbsp;</th>
+                                            <th>Action Type</th>
+                                        </thead>
+                                    </tr>
+                                </td>
+                                <td>
+                                    <tr>
+                                        <thead>
+                                            <th>Whom to Send &nbsp;</th>
+                                            <th>Action Type</th>
+                                        </thead>
+                                    </tr>
+                                </td>
+                             
+                            </tr>
+                            <tr>
+                                <td>Workflow Review</td>
+                                <td></td>
+                                <td>
+                                    <tr>
+                                        <td>
+                                            <input 
+                                                type={'text'}
+                                                placeholder='Whom to Send'
+                                                />
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Approve (Yes)</option>
+                                                <option>Reject (No)</option>
+                                                <option>Review</option>
+                                                <option>Complete</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </td>
+                                <td>
+                                    <tr>
+                                        <td>
+                                            <input 
+                                                type={'text'}
+                                                placeholder='Whom to Send'
+                                                />
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Approve (Yes)</option>
+                                                <option>Reject (No)</option>
+                                                <option>Review</option>
+                                                <option>Complete</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Workflow Final Submit</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>                
                     </Table>
                 </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+            </Col>
+            <Col>
+                <Button variant='success'>Send</Button>
             </Col>
         </Row>
     </Container>
