@@ -1,5 +1,6 @@
 import './App.css';
 import Workflow from './components/Workflow';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
