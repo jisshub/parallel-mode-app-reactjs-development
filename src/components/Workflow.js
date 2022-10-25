@@ -183,18 +183,21 @@ export default function Workflow() {
                     <Table striped bordered>
                         <thead>
                             <tr>
-                                <th>Folder Name</th>
-                                <th>File Name</th>
-                                <th>Owner Name</th>
-                                <th>Owner Email</th>
+                                <th>Work Process</th>
+                                <th>Workflow Start From</th>
+                                <th>If Approve (Yes) ?</th>
+                                <th>If Rejects (No)</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Praveen Folder</td>
-                                <td>----</td>
-                                <td>Praveen</td>
-                                <td>Praveen@gmail.com</td>
+                                <td>Workflow Approval</td>
+                                <td> </td>
+                                <td>Whom to Send</td>
+                                <td>Action Type</td>
+                                <td>Whom to Send Action Type</td>
+                                <td>Whom to Send Action Type</td>
                             </tr>
                         </tbody>                
                     </Table>
