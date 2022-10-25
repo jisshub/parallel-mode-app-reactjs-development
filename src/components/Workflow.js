@@ -129,6 +129,53 @@ export default function Workflow() {
                 </div>
             </Col>
         </Row>
+        <Row>
+            <Col>
+                <div>
+                    <Form>
+                        <Form.Group className='mb-3'>
+                            <Row>
+                                <Col>
+                                    <Form.Label>Start From</Form.Label>
+                                </Col>
+                                <Col>                                   
+                                    <Form.Control
+                                        type='text' 
+                                        placeholder='Owner Name(Default)'
+                                    />
+                                </Col>
+                            </Row>
+                        </Form.Group> 
+                    </Form>
+                </div>
+            </Col>
+            <Col>
+                <div>
+                    <Form>
+                        <Form.Group className='mb-3'>
+                            <Row>
+                                <Col>
+                                    <Form.Label>End To</Form.Label>
+                                </Col>
+                                <Col>                                   
+                                    <Form.Control
+                                        type='text' 
+                                        placeholder='Search Email or Name'
+                                    />
+                                </Col>
+                            </Row>
+                        </Form.Group> 
+                    </Form>
+                </div>
+            </Col>
+            <Col>
+                <p>
+                    <strong>
+                        ( Review, Approve | Reject, Complete )
+                    </strong>
+                </p>
+            </Col>
+        </Row>
     </Container>
   )
 }
