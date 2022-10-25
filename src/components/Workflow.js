@@ -32,7 +32,7 @@ export default function Workflow() {
                     </Table>
                 </div>
             </Col>
-            <Col>
+            <Col md='auto'>
                 <div className='workflow-form'>
                     <Form>
                         <Form.Group className='mb-3'>
@@ -59,7 +59,7 @@ export default function Workflow() {
                     </Form>
                 </div>
             </Col>
-            <Col>
+            <Col xs lg="2">
                 <div className='workflow-form-2'>
                     <Form>
                         <Form.Group className='mb-3'>
