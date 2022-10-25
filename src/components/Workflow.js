@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Workflow.css';
 import Form from 'react-bootstrap/Form';
+import {BsSearch} from 'react-icons/bs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 export default function Workflow() {
   return (
@@ -78,6 +81,46 @@ export default function Workflow() {
                                         id='workflow-type'
                                         label='Parallel'
                                         checked
+                                    />
+                                </Col>
+                            </Row>
+                        </Form.Group>
+                    </Form>
+                </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                <div>
+                    <Form>
+                        <Form.Group className='mb-3'>
+                            <Row>
+                                <Col>
+                                    <Form.Label>Message</Form.Label>
+                                </Col>
+                                <Col>
+                                    <Form.Control 
+                                        type='text' 
+                                        placeholder='Are they ok for Payment?'
+                                    />
+                                </Col>
+                            </Row>
+                        </Form.Group>
+                    </Form>
+                </div>
+            </Col>
+            <Col>
+                <div>
+                    <Form>
+                        <Form.Group className='mb-3'>
+                            <Row>
+                                <Col>
+                                    <Form.Label>Invite Email</Form.Label>
+                                </Col>
+                                <Col>                                   
+                                    <Form.Control
+                                        type='text' 
+                                        placeholder='Search Email or Name'
                                     />
                                 </Col>
                             </Row>
