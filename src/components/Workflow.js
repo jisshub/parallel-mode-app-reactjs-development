@@ -311,6 +311,20 @@ export default function Workflow() {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Add Workflow Process or Not</Modal.Body>
+                <Modal.Footer>
+                    <Button 
+                        variant='secondary' 
+                        onClick={handleClose}
+                    >
+                    Cancel
+                    </Button>
+                    <Button 
+                        variant='primary'
+                        onClick={handleClose}
+                    >
+                    Save Changes
+                    </Button>
+                </Modal.Footer>
             </Modal>
         </>
     </Container>
