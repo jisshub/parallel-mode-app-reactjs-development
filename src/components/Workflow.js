@@ -107,10 +107,10 @@ export default function Workflow() {
                     <Form>
                         <Form.Group className='mb-3'>
                             <Row>
-                                <Col>
+                                <Col style={{display: 'flex', justifyContent: 'left'}}>
                                     <Form.Label className='label-clr'>Message</Form.Label>
                                 </Col> 
-                                <Col>
+                                <Col style={{display: 'flex', justifyContent: 'left'}}>
                                     <Form.Control 
                                         type='text' 
                                         placeholder='Are they ok for Payment?'
@@ -147,10 +147,10 @@ export default function Workflow() {
                     <Form>
                         <Form.Group className='mb-3'>
                             <Row>
-                                <Col>
+                                <Col style={{display: 'flex', justifyContent: 'left'}}>
                                     <Form.Label className='label-clr' >Start From</Form.Label>
                                 </Col>
-                                <Col>                                   
+                                <Col style={{display: 'flex', justifyContent: 'left'}}>                                   
                                     <Form.Control
                                         type='text' 
                                         placeholder='Owner Name(Default)'
