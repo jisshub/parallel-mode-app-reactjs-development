@@ -212,8 +212,8 @@ export default function Workflow() {
                                     </tr>
                                 </td>
                                 <td>
-                                    <Folder color="green" size={30} />
-                                    <PencilSquare color='royalblue' size={30} />
+                                    <Folder color="green" size={30} className='icon-stl-upd' />
+                                    <PencilSquare color='royalblue' size={30} className='icon-stl-upd' />
                                     <Trash color='red' size={30} />
                                 </td>
 
