@@ -8,9 +8,14 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Folder, 
         PencilSquare, 
+        PlusLg, 
+        PlusSquare, 
         Trash } from 'react-bootstrap-icons';
 
 export default function Workflow() {
+    const handleAddIcon = () => {
+        console.log('Click Add')
+    }
   return (
     <Container>
         <Row>
@@ -212,9 +217,21 @@ export default function Workflow() {
                                     </tr>
                                 </td>
                                 <td>
-                                    <Folder color="green" size={30} className='icon-stl-upd' />
-                                    <PencilSquare color='royalblue' size={30} className='icon-stl-upd' />
-                                    <Trash color='red' size={30} />
+                                    <PlusSquare 
+                                        color="green" 
+                                        size={30} 
+                                        className='icon-stl-upd'
+                                        onClick={handleAddIcon}
+                                    />
+                                    <PencilSquare 
+                                        color='royalblue' 
+                                        size={30} 
+                                        className='icon-stl-upd' 
+                                    />
+                                    <Trash 
+                                        color='red' 
+                                        size={30} 
+                                    />
                                 </td>
 
                             </tr>
