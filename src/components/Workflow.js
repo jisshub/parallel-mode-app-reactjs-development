@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,11 +11,17 @@ import { Folder,
         PlusLg, 
         PlusSquare, 
         Trash } from 'react-bootstrap-icons';
+import Modal from 'react-bootstrap/Modal';
+import { ModalBody } from 'react-bootstrap';
 
 export default function Workflow() {
-    const handleAddIcon = () => {
-        console.log('Click Add')
-    }
+    const [show, setShow] = useState(false);
+    const handleShow = () => {
+        setShow(true);
+    };
+    const handleClose = () => {
+        setShow(false);
+    };
   return (
     <Container>
         <Row>
@@ -221,7 +227,7 @@ export default function Workflow() {
                                         color="green" 
                                         size={30} 
                                         className='icon-stl-upd'
-                                        onClick={handleAddIcon}
+                                        onClick={handleShow}
                                     />
                                     <PencilSquare 
                                         color='royalblue' 
@@ -297,6 +303,16 @@ export default function Workflow() {
                 </Button>
             </Col>
         </Row>
+        <>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>
+                        Approve Workflow
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Add Workflow Process or Not</Modal.Body>
+            </Modal>
+        </>
     </Container>
   )
 }
