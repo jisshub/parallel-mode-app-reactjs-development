@@ -101,7 +101,7 @@ export default function Workflow() {
                 </div>
             </Col>
         </Row>
-        <Row>
+        <Row className='row-2-inputs'>
             <Col>
                 <div>
                     <Form>

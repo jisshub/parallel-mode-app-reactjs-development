@@ -8,3 +8,9 @@ div.table, div.workflow-form, div.workflow-form-2 {
 .icon-stl-upd{
     margin-right: 0.5rem;
 }
+
+.row-2-inputs {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
