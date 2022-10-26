@@ -39,7 +39,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Workflow Name</Form.Label>   
+                                    <Form.Label className='label-clr'>Workflow Name</Form.Label>   
                                 </Col>
                                 <Col>
                                     <Form.Control type='text' />
@@ -50,7 +50,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Due Date</Form.Label>
+                                    <Form.Label className='label-clr'>Due Date</Form.Label>
                                 </Col>
                                 <Col>
                                     <Form.Control type='date' />
@@ -66,7 +66,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Workflow Type</Form.Label>
+                                    <Form.Label className='label-clr'>Workflow Type</Form.Label>
                                 </Col>
                                 <Col>
                                     <Form.Check 
@@ -94,8 +94,8 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Message</Form.Label>
-                                </Col>
+                                    <Form.Label className='label-clr'>Message</Form.Label>
+                                </Col> 
                                 <Col>
                                     <Form.Control 
                                         type='text' 
@@ -113,7 +113,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Invite Email</Form.Label>
+                                    <Form.Label className='label-clr' >Invite Email</Form.Label>
                                 </Col>
                                 <Col>                                   
                                     <Form.Control
@@ -134,7 +134,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>Start From</Form.Label>
+                                    <Form.Label className='label-clr' >Start From</Form.Label>
                                 </Col>
                                 <Col>                                   
                                     <Form.Control
@@ -153,7 +153,7 @@ export default function Workflow() {
                         <Form.Group className='mb-3'>
                             <Row>
                                 <Col>
-                                    <Form.Label>End To</Form.Label>
+                                    <Form.Label className='label-clr' >End To</Form.Label>
                                 </Col>
                                 <Col>                                   
                                     <Form.Control
@@ -195,16 +195,16 @@ export default function Workflow() {
                                 <td>
                                     <tr>
                                         <thead>
-                                            <th>Whom to Send &nbsp;</th>
-                                            <th>Action Type</th>
+                                            <th className='th-clr'>Whom to Send &nbsp;</th>
+                                            <th className='th-clr'>Action Type</th>
                                         </thead>
                                     </tr>
                                 </td>
                                 <td>
                                     <tr>
                                         <thead>
-                                            <th>Whom to Send &nbsp;</th>
-                                            <th>Action Type</th>
+                                            <th className='th-clr'>Whom to Send &nbsp;</th>
+                                            <th className='th-clr'>Action Type</th>
                                         </thead>
                                     </tr>
                                 </td>
@@ -266,7 +266,10 @@ export default function Workflow() {
             <Col>
             </Col>
             <Col>
-                <Button variant='success'>Send</Button>
+                <Button style={{backgroundColor: '#3ecc31', border: '2px solid black'}}
+                        variant='success'>
+                    Send
+                </Button>
             </Col>
         </Row>
     </Container>

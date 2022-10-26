@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <h1>Parallel Mode</h1>
+      <h1 style={{color: '#3ecc31'}}>Parallel Mode</h1>
       <Workflow />
     </div>
   );
