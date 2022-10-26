@@ -180,13 +180,6 @@ export default function Workflow() {
                     </Form>
                 </div>
             </Col>
-            <Col>
-                <p>
-                    <strong>
-                        ( Review, Approve | Reject, Complete )
-                    </strong>
-                </p>
-            </Col>
         </Row>
 
         <Row>
