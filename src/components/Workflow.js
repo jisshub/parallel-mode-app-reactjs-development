@@ -249,7 +249,7 @@ export default function Workflow() {
                                                 />
                                         </td>
                                         <td>
-                                            <select>
+                                            <select style={{height: '1.9rem'}}>
                                                 <option>Approve (Yes)</option>
                                                 <option>Reject (No)</option>
                                                 <option>Review</option>
@@ -267,7 +267,7 @@ export default function Workflow() {
                                                 />
                                         </td>
                                         <td>
-                                            <select>
+                                            <select style={{height: '1.9rem'}}>
                                                 <option>Approve (Yes)</option>
                                                 <option>Reject (No)</option>
                                                 <option>Review</option>
