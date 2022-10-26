@@ -228,15 +228,18 @@ export default function Workflow() {
                                         size={30} 
                                         className='icon-stl-upd'
                                         onClick={handleShow}
+                                        style={{cursor: 'pointer'}}
                                     />
                                     <PencilSquare 
                                         color='royalblue' 
                                         size={30} 
-                                        className='icon-stl-upd' 
+                                        className='icon-stl-upd'
+                                        style={{cursor: 'pointer'}}
                                     />
                                     <Trash 
                                         color='red' 
                                         size={30} 
+                                        style={{cursor: 'pointer'}}
                                     />
                                 </td>
 
