@@ -6,6 +6,9 @@ import Col from 'react-bootstrap/Col';
 import './Workflow.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { Folder, 
+        PencilSquare, 
+        Trash } from 'react-bootstrap-icons';
 
 export default function Workflow() {
   return (
@@ -208,7 +211,12 @@ export default function Workflow() {
                                         </thead>
                                     </tr>
                                 </td>
-                             
+                                <td>
+                                    <Folder color="green" size={30} />
+                                    <PencilSquare color='royalblue' size={30} />
+                                    <Trash color='red' size={30} />
+                                </td>
+
                             </tr>
                             <tr>
                                 <td>Workflow Review</td>
